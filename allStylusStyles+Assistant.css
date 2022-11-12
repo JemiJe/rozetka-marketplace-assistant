@@ -1,0 +1,264 @@
+/* splitter.staging.com.ua custom style sheet */
+
+/* стили для непривязаных/привязанных в окне для привязки параметров */
+
+.form-group.attr-values-comparison [aria-disabled="true"] [title="Не привязан"] {
+    background-color: rgb(191, 191, 191) !important;
+  }
+  
+  .form-group.attr-values-comparison [aria-disabled="false"] [title="Не привязан"] {
+    background-color: rgb(255, 75, 75) !important;
+  }
+  
+  /* размеры некоторых элементов */
+  input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+  }
+  .select2-selection__choice__remove {
+      /*font-size: 20px;*/
+      padding: 0px 5px;
+      border: 1px solid;
+  }
+  
+  /* выгрузки по центру на основной странице */
+  .col-md-6 #download_items_xml,
+  .col-md-6 .btn.bg-purple.pull-right,
+  .btn.bg-orange.pull-right {
+      /*margin-right: 80%;*/
+      /*display: inline-block;*/
+      float: left !important;
+  }
+  
+  del {
+      /*visibility: hidden;*/
+      /*visibility: collapse;*/
+      color: grey;
+  }
+  
+  input:disabled,
+  textarea:disabled {
+      cursor: default !important;
+  }
+  [data-col-seq="7"],
+  .astLight {
+      background: #dbebbd82;
+  }
+  
+  /*-------------------------------------------------------------------------------------*/
+  
+  /* тема интерфейса */
+  .navbar, .logo, .nav-group, .dropBtn, .dropBtnAction {
+      background-color: #686253 !important;
+  }
+  .view-tabs.nav.nav-tabs a {
+      color: #e6d9d2 !important;
+  }
+  .view-tabs.nav.nav-tabs .active a {
+      color: #3e3937 !important;
+  }
+  .view-tabs.nav.nav-tabs a:hover,
+  .view-tabs.nav.nav-tabs a:focus,
+  .view-tabs.nav.nav-tabs a:active,
+  .view-tabs.nav.nav-tabs a:visited {
+      color: #685143 !important;
+  }
+  .main-sidebar.navbar-default,
+  .treeview-menu {
+      background-color: #686253 !important;
+      filter: brightness(75%);
+  }
+  .locked-rz-attribute {
+      background-color: #f7d7ca !important;
+  }
+  
+  /*-------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------------------------------------*/
+  /* assistant styles ------------------------------------------------*/
+  
+  /* UI */
+  
+  .astMsg {
+      position: absolute;
+      top: 55px;
+      left: 50%;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 1s linear;
+      /*animation: 3s ease-in 1s 1 reverse both running slidein;*/
+  }
+  /*@keyframes slidein {
+      
+  }*/
+  .astMsgHidden {
+      opacity: 0;
+  }
+  
+  /* main fixed window */
+  .astMainWindow {
+      position: fixed;
+      top: 0px;
+      right: 30%;
+      z-index: 9999;
+      font-size: large;
+      background: white;
+      padding: 5px;
+      /*border: 1px #686253 solid;*/
+      box-shadow: 0px 0px 5px grey;
+      border-radius: 0px 0px 7px 7px;
+  }
+  .astWindowSep {
+      border: 1px dashed #6bb12c78;
+      border-right: none;
+      border-left: none;
+      border-bottom: none;
+      margin: 5px 0px;
+      padding: 5px 0px;
+  }
+  .astBtn {
+      margin: 2px;
+  }
+  #astWindowStatus_taskNum {
+      color: #6bb12c;
+      font-weight: bold;
+      padding: 0px 2px;
+      border: 1px #6bb12c solid;
+  }
+  #astWindowStatus_taskDetail {
+      color: #3b6cb6;
+      padding: 0px 2px;
+  }
+  .astWindowStatus,
+  .astWindowStatus p {
+      display: inline-block;
+  }
+  .astMainWindow button {
+      display: inline-block;
+  }
+  .astWindowStatus p {
+      margin: 3px 0px !important;
+  }
+  .astBtnHideStatus {
+      float: right;
+      background-color: #6bb12c;
+      padding: 6px;
+  }
+  .astBtnDropdown {
+      float: right;
+  }
+  .astBtnHideStatus:hover {
+      background-color: #dcffbb;
+      color: #579124;
+  }
+  .astWindowWrapper {
+      display: inline-block;
+  }
+  .astDropdown {
+      display: block;
+      max-width: 600px;
+  }
+  .astUIHide {
+      display: none;
+  }
+  #astGetIDsTextarea {
+      display: block;
+      width: 100%;
+      resize: none;
+  }
+  #astTableTaskDetail {
+      width: 600px;
+      display: inline-table;
+      color: greenyellow;
+      font-size: medium;
+      margin-top: 18px;
+  }
+  #astTableTaskDetail td {
+      padding: 3px;
+      border: 1px solid greenyellow;
+  }
+  
+  
+  /* filler */
+  .astFiller {
+      z-index: 9999;
+      /* background: #6bb12c; */
+      padding: 10px 0px 10px;
+      margin: 10px 0px 10px;
+      /* box-shadow: inset 0px 0px 5px 0px grey; */
+      border: 1px solid #6bb12c78;
+      /* border-radius: 0px 0px 7px 7px; */
+      color: #356e00;
+      font-size: initial;
+  }
+  .astFiller input {
+      font-size: large;
+      font-family: sans-serif;
+  }
+  #astFillerReplaceCharMacrosInput {
+      width: 100%;
+  }
+  .astFiller h4,
+  .astFiller h5 {
+      text-align: center;
+      margin: 0px 0px 10px;
+      font-weight: bold;
+  }
+  #astBtnFillerDivideInput {
+      width: 50px;
+      display: inline-block;
+  }
+  .astFillerChange {
+      color: #004eff;
+      border: 1px solid #004eff;
+  }
+  #astBtnAutopaginationTimerStep {
+      width: 100px;
+  }
+  
+  /* analyzer */
+  zzzp { /* analyzer passed */
+      background: #7dff00c7;
+      border: 2px solid #5c6655 !important;
+  }
+  .astAnalyzerParamLight td {
+      background: #f3f70036 !important;
+      border: 2px solid #54bd12 !important;
+  }
+  .astAnalyzerWarningLight tr {
+      background: #f9ac001f !important;
+  }
+  
+  /* page appearance */
+  .astBorderDone {
+      border: 3px solid lightgreen;
+  }
+  .astLight {
+      background: #dbebbd82 !important;
+  }
+  .theme--light.v-data-table tbody tr.v-data-table__selected {
+      background: #dbebbd82 !important;
+  }
+  tr.sync-sources.info td {
+      background: #dbebbd82 !important;
+  }
+  .astHideElem {
+      display: none;
+  }
+  .astUndoneAmount {
+      color: #009f02;
+      font-weight: bold;
+  }
+  .astUndoneAmountOk {
+      color: #0013df;
+      font-weight: bold;
+  }
+  .astUndoneAmountHuge {
+      color: #df0000;
+      font-weight: bold;
+  }
+  .astUndoneAmountReallyHuge {
+      color: #ea009c;
+      font-weight: bold;
+      font-size: medium;
+  }
+  
